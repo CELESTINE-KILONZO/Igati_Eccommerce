@@ -142,4 +142,6 @@ class Support(models.Model):
     status = models.CharField(choices=STATUS_CHOICES, default='pending') 
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
-     .
+    
+    def __str__(self):
+        return f"{self.subject} - {self.user.username}"
