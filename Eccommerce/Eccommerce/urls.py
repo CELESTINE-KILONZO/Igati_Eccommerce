@@ -1,9 +1,9 @@
 from django.contrib import admin
 from django.urls import path, include
-from MarketplaceApp.views import*
+from products.views import*
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 from rest_framework.routers import DefaultRouter
-from MarketplaceApp.views import ProductViewSet, InventoryViewSet,CategoryViewSet, OrderViewSet
+from products.views import ProductViewSet, InventoryViewSet,CategoryViewSet, OrderViewSet
 
 router = DefaultRouter()
 router.register(r'products', ProductViewSet, basename='product')
