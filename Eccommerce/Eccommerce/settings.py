@@ -33,7 +33,7 @@ SECRET_KEY = 'django-insecure-$d-jsx@z2i_&e+il&!w6chfxh9@=nf2y=kf--g^h2i5l_dwj!j
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG=True  
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.sevalla.app', 'localhost', '127.0.0.1']
 
 
 # Application definition
