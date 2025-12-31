@@ -2,13 +2,9 @@ from django.db import models
 from django.conf import settings
 from sellers.models import Seller
 
-
-
 class category(models.Model):
     name = models.CharField(max_length=200)
     description = models.TextField()
-    
-
 
 class Product(models.Model):
     name = models.CharField(max_length=200)
